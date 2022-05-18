@@ -20,18 +20,18 @@ img{
 
 /*=============VARIABLES=============*/
 :root {
-  --header-height: 4.5rem;
+  --header-height: 4.0rem;
 
   /* colors */
-  --hue: 159;
+  --hue: 23;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color: hsl(var(--hue) 100% 57%);
+  --base-color-second: rgb(255, 68, 0);
   --base-color-alt: hsl(var(--hue) 57% 53%);
-  --title-color: hsl(var(--hue) 41% 10%);
-  --text-color: hsl(0 0% 46%);
+  --title-color: hsl(0% 0% 99%);
+  --text-color: rgb(255, 255, 255);
   --text-color-light: hsl(0 0% 98%);
-  --body-color: hsl(0 0% 98%);
+  --body-color: rgb(0, 0, 0);
 
   /*fonts*/
   --title-font-size: 1.875rem;
@@ -48,8 +48,8 @@ html{
 body{
   font: 400 1rem var(--body-font);
   color: var(--text-color);
-  background: var(--body-color)
-  -webkit-font-smoothing antialiased;
+  background: var(--body-color);
+  -webkit-font-smoothing: antialiased;
 }
 
 .title{
@@ -68,6 +68,7 @@ body{
   border-radius: 0.25rem;
   font: 500 1 rem var(--body-font);
   transition: background 0.3s;
+  
 }
 
 .button:hover{
@@ -77,16 +78,16 @@ body{
 .divider-1{
   height: 1px;
   background: linear-gradient(270deg,
-  hsla(var(--hue), 36%, 57%, 1),
-  hsla(var(--hue), 65%, 88%, 0.34)
+  hsl(22, 100%, 50%),
+  hsl(35, 75%, 69%)
   );
 }
 
 .divider-2{
   height: 1px;
   background: linear-gradient(270deg,
-  hsla(var(--hue), 65%, 88%, 0.34),
-  hsla(var(--hue), 36%, 57%, 1)
+  hsl(35, 75%, 69%),
+  hsl(22, 100%, 50%)
   );
 }
 
@@ -154,6 +155,10 @@ body{
 
 .logo-alt span{
   color: var(--body-color);
+}
+
+.logo i{
+  color: var(--base-color);
 }
 
 
@@ -298,6 +303,7 @@ nav.show div.icon-close{
   right: 2.93rem;
 }
 
+
 #home .image img,
 #home .image::before{
   border-radius: 0.25rem;
@@ -321,7 +327,7 @@ nav.show div.icon-close{
 /*=============ABOUT=============*/
 
 #about{
-  background: white;
+  background: rgb(0, 0, 0);
 }
 
 #about .container{
@@ -367,7 +373,7 @@ nav.show div.icon-close{
 
 .card{
   padding: 3.625rem 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 0px 12px rgba(232, 94, 8, 0.507);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: .25rem .25rem 0 0 ;
   text-align: center;
@@ -378,7 +384,13 @@ nav.show div.icon-close{
   margin-bottom: 1.5rem;
   font-size: 5rem;
   color: var(--base-color);
+  transition: 0.3s;
+  display: inline-block;
 
+}
+
+.card i:hover{
+  transform: translateY(-10px);
 }
 
 .card .title{
@@ -389,7 +401,7 @@ nav.show div.icon-close{
 /*=============TESTIMONIALS=============*/
 
 #testimonials{
-  background: white;
+  background: rgb(0, 0, 0);
 }
 
 #testimonials .container{
@@ -405,7 +417,7 @@ nav.show div.icon-close{
 
 #testimonials blockquote{
   padding: 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 0px 12px rgba(238, 67, 5, 0.51);
   border-radius: 0.25rem;
 }
 
@@ -444,6 +456,11 @@ nav.show div.icon-close{
 .swiper-slide{
   height: auto;
   padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
 .swiper-pagination-bullet-active {

@@ -8,7 +8,7 @@
 <br>
 
 <p align="center">
-<a href="https://mateusgerigk.github.io/JimmysPizza/">
+<a href="https://mateusgerigk.github.io/JimmysPizza/" target="_blank">
   
   ## 🔥  PREVIEW PAGE  🔥
   

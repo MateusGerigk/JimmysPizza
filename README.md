@@ -8,11 +8,9 @@
 <br>
 
 <p align="center">
-<a href="https://mateusgerigk.github.io/JimmysPizza/" target="_blank">
   
-  ## 🔥  PREVIEW PAGE  🔥
-  
-  </a>
+  ## 🔥  [PREVIEW PAGE](https://mateusgerigk.github.io/JimmysPizza/)  🔥
+
 </p>
 
 ## 💻 Tecnologias
